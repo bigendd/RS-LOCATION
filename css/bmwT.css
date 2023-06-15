@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+font-family: 'poppins', sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+text-decoration: none;
+text-transform: none;
+}
+.Logo-of-site {
+    width: 4.5cm;
+    margin-left: 1cm;
+    cursor: pointer;
+}
+.nav-link {
+
+  margin: 0 20px;
+  position: relative;
+  }
+  .nav-link::before {
+    bottom: 0;
+    transition: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    content: '';
+  background-color: brown;
+    border-radius: 6px;
+  }
+  .nav-link:hover::before{
+    width: 90%;
+  }
+
+
+
+
+
+
+  
+.chevron {
+    background: rgb(233, 85, 85);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .chevron.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+@media (max-width: 991.5px) {
+
+  .nav-link:hover::before{
+      width: 0;
+    }
+.nav-link{
+  text-align: center;
+}
+
+
+}
+.mercedes {
+
+    margin-top: 5px;
+   
+
+  
+  }
+  .n  {
+    background-color: rgba(166, 161, 161, 0.303);
+   width: 100%;
+
+    height: 1.7cm;
+    border-radius: 0;
+
+  }
+  h1{
+   width: 100%;
+   display: flex;
+   color: rgb(0, 0, 0);
+ height: 1.7cm;
+   
+  
+  }
+  a {
+    text-transform: none;
+    text-decoration: none;
+  
+  }
+span {
+  margin-top: 8px;
+}
+.left {
+  color: #1f1f1f;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.pa {
+  width: 4cm;
+}
+h2{
+  
+  width: 4cm;
+}
+.s{
+
+color: #1f1f1f;
+ margin-top: 2cm;
+
+}
+.i {
+  margin-top: 2cm;
+  display: flex;
+  
+  
+
+}
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+  text-align: start;
+}
+.k{
+  color: #1f1f1f;
+  margin-top: 30px;
+}
+.f {
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: start;
+  
+}
+@media (max-width: 1199.5px) {
+
+  .s{
+  width: 100%;
+  }
+ 
+  
+  }
+
+.o {
+ color: white;
+  margin-right: 5%;
+  width: 190px;
+  height: 40px;
+  border-radius: 3px;
+  background: linear-gradient(to right, black 50%, brown 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+ text-decoration: none;
+ text-transform: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.o:hover {
+  background-position: left bottom;
+  color: white;
+}
+.car-card__information--booking {
+  width: 100%;
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2cm;
+}
+.r {
+  color: white;
+}

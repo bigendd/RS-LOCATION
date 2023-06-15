@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+font-family: 'poppins', sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+text-decoration: none;
+text-transform: none;
+}
+.Logo-of-site {
+    width: 4.5cm;
+    margin-left: 1cm;
+    cursor: pointer;
+}
+.nav-link {
+   margin: 0 20px;
+  position: relative;
+  }
+  .nav-link::before {
+    bottom: 0;
+    transition: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    content: '';
+  background-color: brown;
+    border-radius: 6px;
+  }
+  .nav-link:hover::before{
+    width: 90%;
+  }
+.btn{
+    border-style: none;
+}
+.banner,
+.order-form {
+	background:  url('../image/audii.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 900px;
+}
+.order-form {
+	height: 1000px;
+}
+
+
+
+.banner .banner-desc h1 {
+	font-size: 48px;
+	font-weight: 400;
+	color: #fff;
+}
+img{
+    width: 100px;
+    
+}
+.col {
+  margin-top: 15px;
+}
+
+.RS {
+  margin-top: -1cm;
+  background:  url('../image/blue-audi_1574935856.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 900px;
+color: #fff;
+
+}
+
+.QQ{
+  padding: 5px;
+  font-size: 15px;
+  padding-left: 1cm;
+}
+.AA {
+  width: 520px;
+  height: 900px;
+
+}
+
+.PP{
+width: 520px;
+height: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+float: right;
+margin-top:-48px ;
+}
+h2 {
+  padding: 1cm;
+  font-weight: 600;
+}
+
+
+
+.text {
+  padding: 10px;
+  font-size: 18px;
+ font-style: normal;
+  line-height:30px ;
+ width: 100%;
+ margin-right: 2cm;
+ margin-top: 20px;
+
+}
+
+h4 {
+  margin-right: 1cm;
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: normal;
+}
+ul {
+  list-style-type: none;
+}
+.style-resize > li::before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-image: url('../image/icons\ approved.png');
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center center;
+  vertical-align: middle;
+   }
+h3{
+  font-weight: 600;
+  margin-top: 2cm;
+}
+iframe {
+  width: 100%;
+  height: 16cm;
+
+   
+}
+
+  @media (max-width: 991px) {
+
+      .nav-link:hover::before{
+        width: 0;
+      }
+      .nav-link{
+        text-align: center;
+    }
+  
+}
+
+.chevron {
+  background: rgb(233, 85, 85);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+.chevron.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  z-index: 99;
+}

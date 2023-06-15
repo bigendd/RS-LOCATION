@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+font-family: 'poppins', sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+text-decoration: none;
+text-transform: none;
+}
+.Logo-of-site {
+    width: 4.5cm;
+    margin-left: 1cm;
+    cursor: pointer;
+}
+.nav-link {
+   margin: 0 20px;
+  position: relative;
+  }
+  .nav-link::before {
+    bottom: 0;
+    transition: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    content: '';
+  background-color: brown;
+    border-radius: 6px;
+  }
+  .nav-link:hover::before{
+    width: 90%;
+  }
+ 
+
+@media (max-width: 991px) {
+
+    .nav-link:hover::before{
+        width: 0;
+      }
+.nav-link{
+    text-align: center;
+}
+
+}
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+#underline:hover::before {
+width: 0;
+}
+.text-capitalize{
+    
+    font-size: 70px;
+	font-weight: 900;
+	color: #fff;
+  }
+.chevron {
+    background: rgb(233, 85, 85);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .chevron.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+.banner,
+.order-form {
+	background:  url('../image/audii.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 900px;
+}
+.order-form {
+	height: 1000px;
+    
+}
+
+
+
+
+.layout-small {
+    width: 60%;
+    
+ margin-top: 1cm;
+
+  max-width: 1024px;
+
+  margin-left: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 20px;
+    gap: 20px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+    
+}
+
+.car-card__presentation {
+    max-width: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.car-card__presentation--images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.car-card__presentation--images-logo {
+    width: 100%;
+}
+
+.car-card__presentation--images-picture {
+    width: 100%;
+}
+
+.car-card__presentation--images-logo img {
+    width: 64px;
+}
+
+.car-card__presentation--images-picture img {
+    width: 160px;
+}
+
+.car-card__hr {
+    width: 1px;
+    height: auto;
+    background-color: #000000;
+}
+
+.car-card__information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.car-card__information--price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-card__information--supp {
+    font-size: 10px;
+}
+
+.car-card__information--booking {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.o {
+    color:white;
+    margin-right: 5%;
+    width: 190px;
+    height: 40px;
+    border-radius: 3px;
+    background: linear-gradient(to right, black 50%, brown 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+   
+    border: none;
+    cursor: pointer;
+
+}
+
+.o:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.p{
+    color:white;
+    margin-right: 5%;
+    width: 190px;
+    height: 40px;
+    border-radius: 3px;
+    background: linear-gradient(to right, black 50%, brown 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+   
+    border: none;
+    cursor: pointer;
+
+}
+
+.p:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+
+
+.QW {
+    color: rgb(238, 5, 5);
+    font-weight: 600;
+}
+@media (max-width: 1024px) {
+    .car-card {
+        flex-direction: column;
+    }
+
+    .car-card__presentation {
+        max-width: 100%;
+    }
+
+    .car-card__hr {
+        width: 100%;
+        height: 1px;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+font-family: 'poppins', sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+text-decoration: none;
+text-transform: none;
+}
+.Logo-of-site {
+    width: 4.5cm;
+    margin-left: 1cm;
+    cursor: pointer;
+}
+.nav-link {
+   margin: 0 20px;
+  position: relative;
+  }
+  .nav-link::before {
+    bottom: 0;
+    transition: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    content: '';
+  background-color: brown;
+    border-radius: 6px;
+  }
+  .nav-link:hover::before{
+    width: 90%;
+  }
+
+
+#underline:hover::before {
+  width: 0;
+  }
+
+
+
+  .banner,
+.order-form {
+	background:  url('../image/audii.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 900px;
+}
+.order-form {
+	height: 1000px;
+    
+}
+ h1 {
+	font-size: 70px;
+	font-weight: 900;
+	color: #fff;
+    
+}
+@media (max-width: 991px) {
+
+  .nav-link:hover::before{
+      width: 0;
+    }
+.nav-link{
+  text-align: center;
+}
+}
+
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.PS {
+ 
+  margin-top: 1cm;
+  margin-left: 10%;
+  width: 80%;
+}
+h3 {
+  padding-bottom: 0.5cm;
+}
+.chevron {
+  background: rgb(233, 85, 85);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+.chevron.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.nom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nom div {
+ display: flex;
+ flex-direction: column;
+ width: 45%;
+ 
+}
+label {
+  margin-top: 6px;
+
+}
+
+input {
+font-size: 15px;
+font-weight: 900;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 5px;
+ outline: 0;
+ border: 1px solid rgba(0,0,0,0.4);
+
+}
+input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.889);
+  background-color: rgb(242, 16, 16);
+  color: white;
+  
+}
+.mes {
+ height: 3cm;
+width: 100%;
+
+}
+
+.DS{
+  margin-top: 1cm;
+margin-left: 45%;
+  border-radius: 3px;
+  width: 140px;
+  height: 40px;
+  display: block;
+  background: linear-gradient(to right, black 50%, brown 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+
+}
+
+button:hover {
+  background-position: left bottom;
+  color: white;
+}
+form {
+  background-color: rgb(242, 16, 16);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+ 
+}
+
+
+.SD {
+flex-direction: column;
+display: flex;
+padding-bottom: 2cm;
+}
+
+select {
+
+  height: 50px;
+  margin-top: 20px;
+}
+.o {
+  color: white;
+   margin-right: 5%;
+   width: 190px;
+   height: 40px;
+   border-radius: 3px;
+   background: linear-gradient(to right, black 50%, brown 50%);
+   background-size: 200% 100%;
+   background-position: right bottom;
+   transition: all .5s ease-out;
+  text-decoration: none;
+  text-transform: none;
+   border: none;
+   cursor: pointer;
+ 
+ }
+ 
+ .o:hover {
+   background-position: left bottom;
+   color: white;
+ }
+ .car-card__information--bookingg {
+   width: 100%;
+   display: flex;
+   text-transform: none;
+   text-decoration: none;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 2cm;
+ }
+ .r {
+   color: white;
+   text-decoration: none;
+ }

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+font-family: 'poppins', sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+text-decoration: none;
+text-transform: none;
+}
+.Logo-of-site {
+    width: 4.5cm;
+    margin-left: 1cm;
+    cursor: pointer;
+}
+.nav-link {
+   margin: 0 20px;
+  position: relative;
+  }
+  .nav-link::before {
+    bottom: 0;
+    transition: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    content: '';
+  background-color: brown;
+    border-radius: 6px;
+  }
+  .nav-link:hover::before{
+    width: 90%;
+  }
+
+
+#underline:hover::before {
+  width: 0;
+  }
+
+
+
+  .banner,
+.order-form {
+	background:  url('../image/audii.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 900px;
+}
+.order-form {
+	height: 1000px;
+    
+}
+ h1 {
+	font-size: 70px;
+	font-weight: 900;
+	color: #fff;
+    
+}
+@media (max-width: 991.5px) {
+
+  .nav-link:hover::before{
+      width: 0;
+    }
+.nav-link{
+  text-align: center;
+}
+.col{
+width: 22rem;
+margin-left: 5px;
+}
+}
+
+@media (max-width: 768.5px) {
+
+  
+.col{
+width: auto;
+margin-left: 0;
+}
+}
+
+.audi {
+  width: 100px;
+margin-top: -7px;
+
+
+}
+.mercedes {
+  width: 100px;
+  margin-top: 5px;
+
+}
+.bmw {
+  width: 100px;
+margin-top: 5px;
+
+
+}
+.n  {
+  background-color: rgba(166, 161, 161, 0.505);
+  width: 100%;
+  margin-top: 35px;
+  height: 1.7cm;
+  
+}
+.card {
+  margin-top: 1cm;
+  width: auto;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+h5 {
+  text-align:start;
+  margin-top: 1cm;
+}
+
+.card-text {
+  color: grey;
+  text-align: start;
+  margin-left: 15px;
+
+  font-size: 13px;
+  
+
+}
+.ii {
+width: 35px;
+margin-left: 1cm;
+margin-top: 20px;
+}
+.o {
+  color:white;
+  margin-right: 5%;
+  width: 190px;
+  height: 40px;
+  border-radius: 3px;
+  background: linear-gradient(to right, black 50%, brown 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+ text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.o:hover {
+  background-position: left bottom;
+  color: white;
+}
+.q{
+  color: #fff;
+  text-decoration: none;
+}
+.chevron {
+  background: rgb(233, 85, 85);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+.chevron.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
